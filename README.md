@@ -36,3 +36,7 @@ Você pode [acessar o figma projeto Buscante](https://www.figma.com/community/fi
 Para abrir e rodar o projeto, execute *npm i* para instalar as dependências e *ng serve* para iniciar o projeto.
 
 Depois, acesse [http://localhost:4200/](url) no seu navegador. 
+
+
+npm install -g @angular/cli@19.2.0
+node  v22.11.0

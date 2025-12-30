@@ -8,11 +8,16 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 export const routes: Routes = [
   {
     path: 'lista-livros',
-    component: ListaLivrosComponent
+    //component: ListaLivrosComponent
+    //carrega somente qdo solicitado! [lazy-loading]
+    loadComponent: () => import('./pages/sobre/sobre.component')
+                          .then((c) => (c.SobreComponent)) 
   },
   {
     path: 'sobre',
-    component: SobreComponent
+    //component: SobreComponent
+    loadComponent:() => import('./pages/contato/contato.component')
+                          .then((c) => (c.ContatoComponent))
   },
   {
     path: 'contato',
